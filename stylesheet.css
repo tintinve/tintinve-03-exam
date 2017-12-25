@@ -1,0 +1,57 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto');*/
+/*//////////////////////---->Mobile first <-----////////////////////////////////*/
+@font-face {
+    font-family: font1;
+    src: url(font1.otf);
+}
+* {
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'font1', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    display: grid;
+    width: 350px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "article1"
+        "article2"
+        "article3"
+        "footer"
+}
+header {
+    grid-area: header;
+    position: relative;
+    background-color: #ef3340
+    }
+nav{
+    position: absolute;
+}
+.article1{
+    grid-area: article1;
+}
+.article2{
+    grid-area: article2;
+}
+.article3{
+    grid-area: article3;
+}
+footer{
+    grid-area: footer;
+}
+/*////////////////////////////////////////////////*/
+@media all and (min-width:1024px) {
+ body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:       
+}   
+}
+/*////////////////////////////////////////////////*/
+@media all and (min-width:1024px) {
+ body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:       
+}  
