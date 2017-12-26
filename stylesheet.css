@@ -19,6 +19,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas: "main" "article1" "article2" "article3" "article4" "article5" "article6" "footer"
 }
+
 main {
     grid-area: main;
     background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
@@ -29,27 +30,77 @@ main {
     padding-bottom: 93px;
     position: relative;
 }
-.logo{
+
+.logo {
     font-size: 4em;
     color: white;
     background-color: black;
     width: 250px;
     padding-left: 10px
 }
-.prompt{
+
+.prompt {
     font-size: 3.4em;
     color: white;
     background-color: black;
     width: 40px;
+    height: 74px;
     position: absolute;
     top: 0px;
-    left: 239px;
-    padding-bottom: 11px
+    left: 243px;
+    padding-bottom: 11px;
+    animation-name: prompt_tilt;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
 }
+
+@keyframes prompt_tilt {
+
+    0% {
+        color: black
+    }
+    ;
+    10% {
+        color: white
+    }
+    ;
+    90% {
+        color: white
+    }
+    ;
+    100% {
+        color: black
+    }
+    ;
+}
+
+.titulo1 {
+    position: absolute;
+    top: 200px;
+    left: 21vw;
+    font-size: 1.59em;
+    background-color: white;
+    width: 75%;
+}
+
 .article1 {
     grid-area: article1;
     background: grey;
-    height: 250px;
+    height: 550px;
+    background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
+    position: relative;
+
+}
+
+.pantalla1 {
+    width: 240px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    left: 6%;
+    top: 20px;
+    border-radius: 8px;
+
 
 }
 
@@ -57,6 +108,7 @@ main {
     grid-area: article2;
     background-color: lightgrey;
     height: 250px;
+
 
 }
 
@@ -99,9 +151,127 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "header header" "main main" "article1 article1" "article2 article3" "article4 article4" "article5 article6" "footer footer"
     }
+    .titulo1 {
+        left: 44%;
+        top: 51%;
+        font-size: 2.4em;
+        width: 54%;
+    }
     /*////////////////////////////////////////////////*/
     @media all and (min-width:1580px) {
         body {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: "header header header" "main main main" "article1 article1 article1" "article2 article3 article3" "article4 article4 article5" "article6 article6 article6" "footer footer footer"
+        }
+        .titulo1 {
+            left: 1060px;
+            top: 100px;
+            font-size: 2.6em;
+            width: 500px;
+            text-align: left;
+        }
+        .article1{
+            height: 760px;
+            position: relative
+        }
+        .main_text h1{
+            position: absolute;
+            left: 1000px;
+            top: 100px;
+            width: 200px;
+            
+        }
+        .container {
+            margin-left: 300px;
+            width: 250px;
+            height: 290px;
+            position: relative;
+            perspective: 1000px;
+        }
+        .hexagono {
+            top: 60px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+        .item {
+            display: block;
+            position: absolute;
+            background: #000;
+            width: 220px;
+            height: 400px;
+            line-height: 200px;
+            font-size: 5em;
+            text-align: center;
+            color: #FFF;
+            opacity: 0.95;
+            border-radius: 10px;
+        }
+        .a {
+            transform: rotateY(0deg) translateZ(250px);
+            background-image: url(assets/img/prototype.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .b {
+            transform: rotateY(60deg) translateZ(250px);
+            background-image: url(assets/img/thrive1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .c {
+            transform: rotateY(120deg) translateZ(250px);
+            background-image: url(assets/img/tintinve1.png);
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .d {
+            transform: rotateY(180deg) translateZ(250px);
+            background-image: url(assets/img/yojimbo1.png);
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .e {
+            transform: rotateY(240deg) translateZ(250px);
+            background-image: url(assets/img/tintinve_home1.png);
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .f {
+            transform: rotateY(300deg) translateZ(250px);
+            background-image: url(assets/img/redisign.png);
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .next,
+        .prev {
+            color: #444;
+            position: absolute;
+            top: 630px;
+            padding: 1em 2em;
+            cursor: pointer;
+            background: #CCC;
+            border-radius: 5px;
+            border-top: 1px solid #FFF;
+            box-shadow: 0 5px 0 #999;
+            transition: box-shadow 0.1s, top 0.1s;
+        }
+        .next {
+            left: 27em;
+        }
+        .prev {
+            left: 15em;
+        }
+        .main_text{
+            position: absolute;
+            top: 0px;
+            left: 400px;
         }

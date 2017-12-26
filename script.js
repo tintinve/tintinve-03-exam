@@ -1,9 +1,25 @@
-let hover = document.querySelector(".post1");
-let texto =document.querySelector(".text_post1")
-hover.addEventListener('mouseover', skift);
-function skift(){
-console.log("function_work");
-hover.classList.add("fade_fondo");
-texto.classList.add("texto_negro")    
-    
+let hexagono = document.querySelector(".hexagono");
+let boton_next = document.querySelector(".next");
+let boton_prev = document.querySelector(".prev");
+let img_frontal  = 0;
+boton_next.addEventListener('click', funcion_next);
+boton_prev.addEventListener('click', funcion_prev);
+
+function funcion_next(){
+   if(img_frontal == 0){
+       img_frontal = img_frontal - 60;
+       hexagono.style.transform = "rotateY("+img_frontal+"deg)";
+   }  else {
+       img_frontal = img_frontal - 60;
+       hexagono.style.transform = "rotateY("+img_frontal+"deg)";
+   }
+}
+function funcion_prev(){
+   if(img_frontal == 0){
+       img_frontal = img_frontal + 60;
+       hexagono.style.transform = "rotateY("+img_frontal+"deg)";
+   }  else {
+       img_frontal = img_frontal + 60;
+       hexagono.style.transform = "rotateY("+img_frontal+"deg)";
+   }
 }
