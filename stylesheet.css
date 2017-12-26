@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kadwa|Allura');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 /*//////////////////////---->Mobile first <-----////////////////////////////////*/
 
 /*@font-face {
@@ -8,7 +8,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Kadwa', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     /*font-family: 'font1', sans-serif;*/
     margin: 0px;
 }
@@ -17,126 +17,75 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "article1" "article2" "article3" "article4" "article5" "article6" "footer"
+    grid-template-areas: "main" "article1" "article2" "article3" "article4" "article5" "article6" "footer"
 }
-
-header {
-    grid-area: header;
-    position: relative;
-    background-color: transparent;
-    height: 96px;
-}
-
-.cuadro1 {
-    width: 45px;
-    height: 100%;
-    margin-right: 25px;
-    float: left;
-    background-color: #3a86ff
-}
-
-.prompt {
-    font-size: 2.75em;
-    color: #FDFFFC;
-    padding-left: 9px;
-    margin: 0px;
-    margin-top: 4px;
-    display: inline-block;
-    animation-name: prompt_tilt;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes prompt_tilt {
-    0% {
-        color: black
-    }
-    ;
-    10% {
-        color: white
-    }
-    ;
-    90% {
-        color: white
-    }
-    ;
-    100% {
-        color: black
-    }
-    ;
-}
-
-.logo {
-    font-size: 3.1em;
-    color: #FDFFFC;
-    float: left;
-    margin: 0px;
-}
-
 main {
     grid-area: main;
-    background-color: transparent;
+    background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
     height: 300px;
+    padding-bottom: 93px;
     position: relative;
-    background-image: url(assets/vid/main_vid.mp4);
 }
-.main-video{
+.logo{
+    font-size: 4em;
+    color: white;
+    background-color: black;
+    width: 250px;
+    padding-left: 10px
+}
+.prompt{
+    font-size: 3.4em;
+    color: white;
+    background-color: black;
+    width: 40px;
     position: absolute;
-    z-index: -1;
-    width: 134%;
-    top: -100px;
-    left: -749px;
-    filter: contrast(1.6)
+    top: 0px;
+    left: 239px;
+    padding-bottom: 11px
 }
-main h1{
-    font-family: 'Allura', cursive;
-    font-size:    19em;
-    color: yellow;
-    position: absolute;
-    top: 110px;
-    left: 385px
-}
-
 .article1 {
     grid-area: article1;
-    background-color: gray;
+    background: grey;
     height: 250px;
-    
+
 }
 
 .article2 {
     grid-area: article2;
     background-color: lightgrey;
     height: 250px;
-    
+
 }
 
 .article3 {
     grid-area: article3;
     background-color: lightgrey;
     height: 250px;
-    
+
 }
 
 .article4 {
     grid-area: article4;
     background-color: lightgrey;
     height: 250px;
-    
+
 }
 
 .article5 {
     grid-area: article5;
     background-color: lightgrey;
     height: 250px;
-    
+
 }
 
 .article6 {
     grid-area: article6;
     background-color: lightgrey;
     height: 250px;
-    
+
 }
 
 footer {
@@ -150,12 +99,8 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "header header" "main main" "article1 article1" "article2 article3" "article4 article4" "article5 article6" "footer footer"
     }
-    .cuadro1 {
-        width: 115px;
-    }
-
     /*////////////////////////////////////////////////*/
-    @media all and (min-width:1680px) {
+    @media all and (min-width:1580px) {
         body {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: "header header header" "main main main" "article1 article1 article1" "article2 article3 article3" "article4 article4 article5" "article6 article6 article6" "footer footer footer"
