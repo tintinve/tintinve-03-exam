@@ -10,7 +10,7 @@ div_activo[3] = document.querySelector(".a4");
 div_activo[4] = document.querySelector(".a5");
 div_activo[5] = document.querySelector(".a6");
 let i = 0;
-let s = [0,5,4,3,2,1]
+let s = [0,5,4,3,2,1,0]
 
 window.addEventListener("keydown", teclado);
 boton_next.addEventListener('click', funcion_next);
@@ -57,14 +57,9 @@ function funcion_prev() {
     hexagono.style.transform = "rotateY(" + img_frontal + "deg)";
     i = i - 1;
     n = (i * (-1));
-    console.log(n);
     f = s[n];
     console.log(f);
-    if (i >= -4 && i <= -1) {
-        div_activo[f].style.opacity = +1;
-    } else if (f = 6){
-        i = 0;
-    } else {
-        i = 0;
+    if (f <= null) {
+    i = 0;
     }
 }
