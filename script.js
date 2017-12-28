@@ -24,6 +24,16 @@ function teclado(e) {
     if (e.keyCode == "39") {
         img_frontal = img_frontal + 60;
         hexagono.style.transform = "rotateY(" + img_frontal + "deg)";
+        i = i + 1;
+    if (i >= 1 && i <= 5) {
+        div_activo[(i)].style.opacity = +1;
+        div_activo[(i)-1].style.opacity = 0;
+    } else {
+        i = 0;
+        div_activo[0].style.opacity = +1;
+        div_activo[5].style.opacity = 0;
+    }
+    console.log(i)
     }
 }
 function funcion_next() {
@@ -45,9 +55,9 @@ function funcion_prev() {
     img_frontal = img_frontal - 60;
     hexagono.style.transform = "rotateY(" + img_frontal + "deg)";
     i = i - 1;
-    if (i >= -5 && i <= 0)  {
+    if (i <= -1 && i >= -5) {
         div_activo[(i*(-1))].style.opacity = +1;
-        div_activo[(i-1)].style.opacity = 0; 
+        div_activo[(i+1)].style.opacity = 0; 
     } else {
         i = 0;
     }
