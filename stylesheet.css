@@ -251,27 +251,27 @@ footer {
         }
     .a1{
         background-color: red;
-        z-index: 
+        opacity: 1;
     }
     .a2{
         background-color: yellow;
-        z-index: 
+        opacity: 0;
     }
     .a3{
         background-color: green;
-        z-index: 
+        opacity: 0;
     }
     .a4{
         background-color: violet;
-        z-index: 
+        opacity: 0;
     }
     .a5{
         background-color: blue;
-        z-index: 
+        opacity: 0;
     }
     .a6{
         background-color: white;
-        z-index: 
+        opacity: 0; 
     }
     /*////////////////////////////////////////////////*/
     @media all and (min-width:1580px) {
