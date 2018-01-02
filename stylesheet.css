@@ -40,15 +40,15 @@ main {
 }
 
 .prompt {
-    font-size: 3.4em;
+    font-size: 3.3em;
     color: white;
     background-color: black;
     width: 40px;
     height: 74px;
     position: absolute;
     top: 0px;
-    left: 243px;
-    padding-bottom: 11px;
+    left: 250px;
+    padding-left: 3px;
     animation-name: prompt_tilt;
     animation-duration: 1s;
     animation-iteration-count: 5;
@@ -176,7 +176,7 @@ footer {
     .container {
         position: absolute;
         top: 0px;
-        left: 300px;
+        left: 280px;
         width: 250px;
         height: 290px;
         perspective: 1000px;
@@ -269,41 +269,48 @@ footer {
     }
     section{
         position: relative;
-        background-color: gray;
-        width: 51%;
-        height: 300px;
+        background-color: transparent;
+        width: 50%;
+        height: 510px;
         float: right;
-        margin-right: 2%
+        margin-right: 3%;
+
         
     }
     .texto_item {
         position: absolute;
         top: 0;
         width: 30%;
+        background-color: transparent;
+        color: white;
        
     }
     .a1 {
-        background-color: red;
         opacity: 1;
+        background-color: #464646;
+        height: 510px;
+        width: 100%;
     }
+    .play_symbol{
+        position: absolute;
+        width: 150px;
+        top: 165px;
+        left: 340px
+        }
     .a2 {
-        background-color: yellow;
         opacity: 0;
+        
     }
     .a3 {
-        background-color: green;
         opacity: 0;
     }
     .a4 {
-        background-color: violet;
         opacity: 0;
     }
     .a5 {
-        background-color: blue;
         opacity: 0;
     }
     .a6 {
-        background-color: white;
         opacity: 0;
     }
     }

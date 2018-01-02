@@ -11,11 +11,15 @@ div_activo[3] = document.querySelector(".a4");
 div_activo[4] = document.querySelector(".a5");
 div_activo[5] = document.querySelector(".a6");
 let i = 0;
+let simbolo_play = document.querySelector(".play_symbol");
+let vid1 = document.querySelector(".vid1");
+                                
+
 
 window.addEventListener("keydown", teclado);
 boton_next.addEventListener('click', funcion_next);
-boton_prev.addEventListener('click', funcion_prev);
-
+//boton_prev.addEventListener('click', funcion_prev);
+simbolo_play.addEventListener('click', funcion_play_video);
 
 function teclado(e) {
     //future self: las proximas 3 lines prenden la funcion de keylisten para la flecha hacia la izquierda.
@@ -68,3 +72,7 @@ function funcion_next() {
 //    i = 0;
 //    }
 //}
+function funcion_play_video() {
+    vid1.play();
+    simbolo_play.style.opacity = "0";
+}
