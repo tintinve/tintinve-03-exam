@@ -2,8 +2,8 @@
 /* Code from proyect "particles" in: https://github.com/VincentGarreau/particles.js
 /* MIT license: http://opensource.org/licenses/MIT
 /* ----------------------------------------------- */
-
-particlesJS('particles-js',
+//particlesJS('particles-js',
+particlesJS('animacion_grid',
   
   {
     "particles": {

@@ -76,21 +76,30 @@ main {
 
 .titulo1 {
     position: absolute;
-    top: 200px;
-    left: 21vw;
+    top: 120px;
+    left: 18vw;
     font-size: 1.59em;
     background-color: white;
     width: 75%;
 }
 
-.article1 {
-    grid-area: article1;
-    background: grey;
-    height: 550px;
-    background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
-    position: relative;
+.subtitulo {
+    position: absolute;
+    top: 170px;
+    left: 18vw;
+    font-size: 1.3em;
+    background-color: white;
+    width: 75%;
 
 }
+
+.article1 {
+    grid-area: article1;
+ display: none;
+    background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
+
+}
+
 
 
 
@@ -134,6 +143,7 @@ footer {
     grid-area: footer;
 }
 
+
 /*////////////////////////////////////////////////*/
 
 @media all and (min-width:680px) {
@@ -143,136 +153,162 @@ footer {
     }
     .titulo1 {
         left: 44%;
-        top: 51%;
+        top: 40%;
         font-size: 2.4em;
         width: 54%;
     }
-    .article1{
-        height: 580px;
+    .subtitulo {
+        left: 44%;
+        top: 59%;
+        font-size: 1.4em;
+        width: 54%;
     }
-     .container {
-            margin-left: 300px;
-            width: 250px;
-            height: 290px;
-            position: relative;
-            perspective: 1000px;
-        }
-        .hexagono {
-            top: 60px;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            transform-style: preserve-3d;
-            transition: transform 1s;
-            left: -80px;
-        }
-        .item {
-            display: block;
-            position: absolute;
-            background: #000;
-            width: 200px;
-            height: 370px;
-            line-height: 200px;
-            font-size: 5em;
-            text-align: center;
-            color: #FFF;
-            opacity: 0.95;
-            border-radius: 10px;
+    
+
+    /*////////////////////////////////////////////////*/
+    @media all and (min-width:1390px) {
             
-        }
-        .a {
-            transform: rotateY(0deg) translateZ(250px);
-            background-image: url(assets/img/prototype.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .b {
-            transform: rotateY(60deg) translateZ(250px);
-            background-image: url(assets/img/thrive1.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .c {
-            transform: rotateY(120deg) translateZ(250px);
-            background-image: url(assets/img/tintinve1.png);
-            background-position: center;
-            background-size:cover;
-            background-repeat: no-repeat;
-        }
-        .d {
-            transform: rotateY(180deg) translateZ(250px);
-            background-image: url(assets/img/yojimbo1.png);
-            background-position: center;
-            background-size:cover;
-            background-repeat: no-repeat;
-        }
-        .e {
-            transform: rotateY(240deg) translateZ(250px);
-            background-image: url(assets/img/tintinve_home1.png);
-            background-position: center;
-            background-size:cover;
-            background-repeat: no-repeat;
-        }
-        .f {
-            transform: rotateY(300deg) translateZ(250px);
-            background-image: url(assets/img/redisign.png);
-            background-position: center;
-            background-size:cover;
-            background-repeat: no-repeat;
-        }
-        .next {
-            left: 540px;
-            top: 30px;
-            width: 100px;
-            height: 530px;
-            position: absolute;
-            cursor: pointer;
-            background-color: transparent;
-            
-        }
-        .prev {
-            left: 70px;
-            top: 30px;
-            width: 100px;
-            height: 530px;
-            color: #444;
-            position: absolute;
-            cursor: pointer;
-            background-color: transparent;
-            
-        }
-        .texto_item{
-            position: absolute;
-            top: 40px;
-            left: 630px;
-            margin-right: 30px;
-        }
-    .a1{
+    .article1 {
+        display: block;
+        height: 600px;
+        position: relative;
+    }
+    .container {
+        position: absolute;
+        top: 0px;
+        left: 300px;
+        width: 250px;
+        height: 290px;
+        perspective: 1000px;
+    }
+    .hexagono {
+        top: 60px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+        left: -80px;
+    }
+    .item {
+        display: block;
+        position: absolute;
+        background: #000;
+        width: 200px;
+        height: 370px;
+        line-height: 200px;
+        font-size: 5em;
+        text-align: center;
+        color: #FFF;
+        opacity: 0.95;
+        border-radius: 10px;
+
+    }
+    .a {
+        transform: rotateY(0deg) translateZ(250px);
+        background-image: url(assets/img/prototype.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .b {
+        transform: rotateY(60deg) translateZ(250px);
+        background-image: url(assets/img/thrive1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .c {
+        transform: rotateY(120deg) translateZ(250px);
+        background-image: url(assets/img/tintinve1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .d {
+        transform: rotateY(180deg) translateZ(250px);
+        background-image: url(assets/img/yojimbo1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .e {
+        transform: rotateY(240deg) translateZ(250px);
+        background-image: url(assets/img/tintinve_home1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .f {
+        transform: rotateY(300deg) translateZ(250px);
+        background-image: url(assets/img/redisign.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .next {
+        left: 540px;
+        top: 30px;
+        width: 100px;
+        height: 530px;
+        position: absolute;
+        cursor: pointer;
+        background-color: transparent;
+
+    }
+    .prev {
+        left: 70px;
+        top: 30px;
+        width: 100px;
+        height: 530px;
+        color: #444;
+        position: absolute;
+        cursor: pointer;
+        background-color: transparent;
+
+    }
+    section{
+        position: relative;
+        background-color: gray;
+        width: 51%;
+        height: 300px;
+        float: right;
+        margin-right: 2%
+        
+    }
+    .texto_item {
+        position: absolute;
+        top: 0;
+        width: 30%;
+       
+    }
+    .a1 {
         background-color: red;
         opacity: 1;
     }
-    .a2{
+    .a2 {
         background-color: yellow;
         opacity: 0;
     }
-    .a3{
+    .a3 {
         background-color: green;
         opacity: 0;
     }
-    .a4{
+    .a4 {
         background-color: violet;
         opacity: 0;
     }
-    .a5{
+    .a5 {
         background-color: blue;
         opacity: 0;
     }
-    .a6{
+    .a6 {
         background-color: white;
-        opacity: 0; 
+        opacity: 0;
     }
+    }
+
+
     /*////////////////////////////////////////////////*/
     @media all and (min-width:1580px) {
         body {
@@ -286,24 +322,19 @@ footer {
             width: 500px;
             text-align: left;
         }
-        .article1{
+        .article1 {
             height: 700px;
             position: relative
         }
-        .main_text h1{
-            position: absolute;
-            left: 1000px;
-            top: 100px;
-            width: 200px;
-            
-        }
         .container {
-            margin-left: 300px;
-            width: 250px;
-            height: 290px;
-            position: relative;
-            perspective: 1000px;
-        }
+        position: absolute;
+        top: -40px;
+        left: 320px;
+        width: 250px;
+        height: 290px;
+        perspective: 1000px;
+    }
+    
         .hexagono {
             top: 60px;
             height: 100%;
@@ -343,28 +374,28 @@ footer {
             transform: rotateY(120deg) translateZ(250px);
             background-image: url(assets/img/tintinve1.png);
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
         }
         .d {
             transform: rotateY(180deg) translateZ(250px);
             background-image: url(assets/img/yojimbo1.png);
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
         }
         .e {
             transform: rotateY(240deg) translateZ(250px);
             background-image: url(assets/img/tintinve_home1.png);
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
         }
         .f {
             transform: rotateY(300deg) translateZ(250px);
             background-image: url(assets/img/redisign.png);
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
         }
         .next {
@@ -375,7 +406,6 @@ footer {
             position: absolute;
             cursor: pointer;
             background-color: transparent;
-            
         }
         .prev {
             left: 7em;
@@ -386,10 +416,16 @@ footer {
             position: absolute;
             cursor: pointer;
             background-color: transparent;
-            
         }
-        .main_text{
-            position: absolute;
-            top: 0px;
-            left: 400px;
+        .titulo1 {
+            left: 56%;
+            top: 35%;
+            font-size: 3.1em;
+            width: 41%;
+        }
+        .subtitulo {
+            left: 56%;
+            top: 57%;
+            font-size: 1.4em;
+            width: 41%;
         }
