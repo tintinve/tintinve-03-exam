@@ -275,25 +275,22 @@ footer {
             float: right;
             margin-right: 3%;
             margin-top: 35px;
-
-
         }
-        .texto_item {
+        .mute{
+            width: 250px;
+            height: 250px;
+            background-color: red;
             position: absolute;
-            top: 0;
-            width: 30%;
-            background-color: transparent;
-            color: white;
-
+            
         }
         .a1 {
             opacity: 1;
             width: 100%;
         }
         .vid1{
-            height: 100%;
             width: 100%;
-            margin: 0px;
+            top: 0px;
+            position: absolute;
         }
         .play_symbol {
             position: absolute;
@@ -307,6 +304,8 @@ footer {
         }
         .vid2 {
             width: 100%;
+            position: absolute;
+            top: 0px;
         }
         .a3 {
             opacity: 0;
@@ -322,6 +321,8 @@ footer {
         }
         .vid4{
             width: 100%;
+            position: absolute;
+            top: 0px;
         }
         .a5 {
             opacity: 0;
@@ -329,6 +330,8 @@ footer {
         }
         .vid5{
             width: 100%;
+            position: absolute;
+            top: 0px;
         }
         .a6 {
             opacity: 0;
@@ -336,6 +339,8 @@ footer {
         }
         .vid6{
             width: 100%;
+            position: absolute;
+            top: 0px;
         }
     }
 

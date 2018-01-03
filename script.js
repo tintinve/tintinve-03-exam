@@ -20,6 +20,8 @@ video_activo[2] = document.querySelector(".vid3");
 video_activo[3] = document.querySelector(".vid4");
 video_activo[4] = document.querySelector(".vid5");
 video_activo[5] = document.querySelector(".vid6");
+let mute = document.querySelector(".mute");
+let mute_selector = document.querySelector(".mute_switch");
                                 
 
 
@@ -27,6 +29,7 @@ window.addEventListener("keydown", teclado);
 boton_next.addEventListener('click', funcion_next);
 //boton_prev.addEventListener('click', funcion_prev);
 simbolo_play.addEventListener('click', funcion_play_video);
+mute.addEventListener('click', unmute)
 
 function teclado(e) {
     //future self: las proximas 3 lines prenden la funcion de keylisten para la flecha hacia la izquierda.
@@ -88,3 +91,10 @@ function funcion_play_video() {
     vid1.play();
     simbolo_play.style.opacity = "0";
 }
+
+function unmute (){
+   if ( video_activo[(i)].muted === false) {    
+        video_activo[(i)].muted = true;
+}else{  video_activo[(i)].muted === true
+       video_activo[(i)].muted = false;
+}}
