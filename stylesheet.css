@@ -124,6 +124,7 @@ main {
     float: left;
     background-color: white;
     padding: 5px;
+    padding-left: 17px;
     position: absolute;
     top: 128px;
     width: 85%;
@@ -135,8 +136,9 @@ main {
     float: left;
     background-color: white;
     padding: 10px;
+    padding-left: 17px;
     position: absolute;
-    top: 160px;
+    top: 159px;
     width: 85%;
     opacity: 0.9;
 }
@@ -146,6 +148,7 @@ main {
     left: 0px;
     top: 245px;
     padding: 5px;
+    padding-left: 17px;
     width: 85%;
     opacity: 0.9;
     background-color: white;
@@ -154,8 +157,9 @@ main {
 .p_2 {
     position: absolute;
     left: 0px;
-    top: 277px;
+    top: 276px;
     padding: 10px;
+    padding-left: 17px;
     width: 85%;
     opacity: 0.9;
     background-color: white;
@@ -166,6 +170,7 @@ main {
     left: 0px;
     top: 363px;
     padding: 5px;
+    padding-left: 17px;
     width: 85%;
     opacity: 0.9;
     background-color: white;
@@ -174,8 +179,9 @@ main {
 .p_3 {
     position: absolute;
     left: 0px;
-    top: 395px;
+    top: 393px;
     padding: 10px;
+    padding-left: 17px;
     width: 85%;
     opacity: 0.9;
     background-color: white;
@@ -186,6 +192,7 @@ main {
     left: 0px;
     top: 462px;
     padding: 5px;
+    padding-left: 17px;
     width: 85%;
     opacity: 0.9;
     background-color: white;
@@ -196,6 +203,7 @@ main {
     left: 0px;
     top: 494px;
     padding: 10px;
+    padding-left: 17px;
     width: 85%;
     opacity: 0.9;
     background-color: white;
@@ -204,7 +212,7 @@ main {
 .article3 {
     grid-area: article3;
     background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
-    height: 250px;
+    height: 370px;
     position: relative;
 }
 .h1_1_art3 {
@@ -219,11 +227,31 @@ main {
     background-color: #A022FF;
     padding: 5px;
 }
+.p_1_art3{
+    float: left;
+    background-color: white;
+    padding: 5px;
+    padding-left: 17px;
+    position: absolute;
+    top: 78px;
+    width: 85%;
+    opacity: 0.9;
+}
 .article4 {
     grid-area: article4;
-    background-color: lightgrey;
-    height: 250px;
-
+    background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
+    height: 520px;
+    position: relative;
+}
+.p_1_art4{
+    float: left;
+    background-color: white;
+    padding: 5px;
+    padding-left: 17px;
+    position: absolute;
+    top: 78px;
+    width: 85%;
+    opacity: 0.9;
 }
 
 .article5 {
@@ -265,62 +293,77 @@ footer {
         width: 54%;
     }
     .article2{
-        height: 400px;
+        height: 330px;
     }
     .h1_1_art2 {
         background-color: #EBFF3B;
-        float: right;
+        float: left;
         padding: 5px;
     }
     .h2_1_art2 {
-        float: right;
+        float: left;
         background-color: #A022FF;
         padding: 5px;
-       
         top: 38px;
         left: 69%;
     }
     .h3_1_art2 {
+        top: 70px;
         width: 45%;
         left: 37px;
         float: left
     }
     .p1_1_art2 {
+        top: 100px;
         width: 45%;
         opacity: 0.9;
         left: 37px;
     }
 
     .h3_2 {
+        top: 190px;
         width: 45%;
         left: 37px;
         
     }
     .p_2 {
+        top: 220px;
         width: 45%;
         left: 37px;
     }
     .h3_3 {
         width: 44%;
-        top: 128px;
+        top: 70px;
         left: 51%;
     }
     .p_3 {
         width: 44%;
-        top: 160px;
+        top: 100px;
         left: 51%;
         height: 75px
     }
     .h3_4 {
         width: 44%;
         left: 51%;
-        top: 245px
+        top: 189px
     }
     .p_4 {
         width: 44%;
         left: 51%;
-        top: 277px;
+        top: 221px;
         height: 75px
+    }
+    .h1_1_art3{
+        float: left;
+    }
+    .h2_1_art3{
+        float: left;
+    }
+    .p_1_art3{
+        width: 44%;
+        top: 128px;
+        left: 51%;
+        float: left;
     }
 
 
