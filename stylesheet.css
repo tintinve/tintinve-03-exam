@@ -47,7 +47,7 @@ main {
     height: 74px;
     position: absolute;
     top: 0px;
-    left: 250px;
+    left: 247px;
     padding-left: 3px;
     animation-name: prompt_tilt;
     animation-duration: 1s;
@@ -76,9 +76,9 @@ main {
 
 .titulo1 {
     position: absolute;
-    top: 120px;
+    top: 130px;
     left: 18vw;
-    font-size: 1.59em;
+    font-size: 2.19em;
     background-color: white;
     width: 75%;
 }
@@ -90,6 +90,7 @@ main {
     font-size: 1.3em;
     background-color: white;
     width: 75%;
+    display: none;
 
 }
 
@@ -99,21 +100,99 @@ main {
     background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
 
 }
-
-
-
-
 .article2 {
     grid-area: article2;
-    background-color: lightgrey;
-    height: 250px;
-
-
+    background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
+    height: 610px;
+    position: relative;
+}
+.h1_1_art2{
+    background-color: #EBFF3B;
+    float: right;
+    padding: 5px;
+}
+.h2_1_art2{
+    float: right;
+    background-color: #A022FF;
+    padding: 5px;
+}
+.h3_1_art2{
+    float: left;
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    top: 128px;
+    width: 85%;
+    opacity: 0.9;
+    
+}
+.p1_1_art2{
+    float: left;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 160px;
+    width: 85%;
+    opacity: 0.9;
 }
 
+.h3_2{
+    position: absolute;
+    left: 0px;
+    top: 245px;
+    padding: 5px;
+    width: 85%;
+    opacity: 0.9;
+    background-color: white;
+}
+.p_2{
+    position: absolute;
+    left: 0px;
+    top: 277px;
+    padding: 10px;
+    width: 85%;
+    opacity: 0.9;
+    background-color: white;
+}
+.h3_3{
+    position: absolute;
+    left: 0px;
+    top: 363px;
+    padding: 5px;
+    width: 85%;
+    opacity: 0.9;
+    background-color: white;
+}
+.p_3{
+    position: absolute;
+    left: 0px;
+    top: 395px;
+    padding: 10px;
+    width: 85%;
+    opacity: 0.9;
+    background-color: white;
+}
+.h3_4{
+    position: absolute;
+    left: 0px;
+    top: 462px;
+    padding: 5px;
+    width: 85%;
+    opacity: 0.9;
+    background-color: white;
+}
+.p_4{
+    position: absolute;
+    left: 0px;
+    top: 494px;
+    padding: 10px;
+    width: 85%;
+    opacity: 0.9;
+    background-color: white;
+}
 .article3 {
     grid-area: article3;
-    background-color: lightgrey;
+    background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
     height: 250px;
 
 }
@@ -167,7 +246,9 @@ footer {
 
     /*////////////////////////////////////////////////*/
     @media all and (min-width:1390px) {
-
+        .subtitulo {
+            display: block;
+        }
         .article1 {
             display: block;
             height: 600px;
