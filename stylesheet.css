@@ -100,23 +100,27 @@ main {
     background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
 
 }
+
 .article2 {
     grid-area: article2;
     background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
     height: 610px;
     position: relative;
 }
-.h1_1_art2{
+
+.h1_1_art2 {
     background-color: #EBFF3B;
     float: right;
     padding: 5px;
 }
-.h2_1_art2{
+
+.h2_1_art2 {
     float: right;
     background-color: #A022FF;
     padding: 5px;
 }
-.h3_1_art2{
+
+.h3_1_art2 {
     float: left;
     background-color: white;
     padding: 5px;
@@ -124,9 +128,10 @@ main {
     top: 128px;
     width: 85%;
     opacity: 0.9;
-    
+
 }
-.p1_1_art2{
+
+.p1_1_art2 {
     float: left;
     background-color: white;
     padding: 10px;
@@ -136,7 +141,7 @@ main {
     opacity: 0.9;
 }
 
-.h3_2{
+.h3_2 {
     position: absolute;
     left: 0px;
     top: 245px;
@@ -145,7 +150,8 @@ main {
     opacity: 0.9;
     background-color: white;
 }
-.p_2{
+
+.p_2 {
     position: absolute;
     left: 0px;
     top: 277px;
@@ -154,7 +160,8 @@ main {
     opacity: 0.9;
     background-color: white;
 }
-.h3_3{
+
+.h3_3 {
     position: absolute;
     left: 0px;
     top: 363px;
@@ -163,7 +170,8 @@ main {
     opacity: 0.9;
     background-color: white;
 }
-.p_3{
+
+.p_3 {
     position: absolute;
     left: 0px;
     top: 395px;
@@ -172,7 +180,8 @@ main {
     opacity: 0.9;
     background-color: white;
 }
-.h3_4{
+
+.h3_4 {
     position: absolute;
     left: 0px;
     top: 462px;
@@ -181,7 +190,8 @@ main {
     opacity: 0.9;
     background-color: white;
 }
-.p_4{
+
+.p_4 {
     position: absolute;
     left: 0px;
     top: 494px;
@@ -190,6 +200,7 @@ main {
     opacity: 0.9;
     background-color: white;
 }
+
 .article3 {
     grid-area: article3;
     background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
@@ -228,7 +239,7 @@ footer {
 @media all and (min-width:680px) {
     body {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "header header" "main main" "article1 article1" "article2 article3" "article4 article4" "article5 article6" "footer footer"
+        grid-template-areas: "header header" "main main" "article1 article1" "article2 article2" "article3 article4" "article5 article6" "footer footer"
     }
     .titulo1 {
         left: 44%;
@@ -241,6 +252,61 @@ footer {
         top: 59%;
         font-size: 1.4em;
         width: 54%;
+    }
+    .h1_1_art2 {
+        background-color: #EBFF3B;
+        float: right;
+        padding: 5px;
+    }
+    .h2_1_art2 {
+        float: right;
+        background-color: #A022FF;
+        padding: 5px;
+        position: absolute;
+        top: 38px;
+        left: 66.11%;
+    }
+    .h3_1_art2 {
+        width: 45%;
+        left: 37px;
+        float: left
+    }
+    .p1_1_art2 {
+        width: 45%;
+        opacity: 0.9;
+        left: 37px;
+    }
+
+    .h3_2 {
+        width: 45%;
+        left: 37px;
+        
+    }
+    .p_2 {
+        width: 45%;
+        left: 37px;
+    }
+    .h3_3 {
+        width: 44%;
+        top: 128px;
+        left: 52%;
+    }
+    .p_3 {
+        width: 44%;
+        top: 160px;
+        left: 52%;
+        height: 75px
+    }
+    .h3_4 {
+        width: 44%;
+        left: 52%;
+        top: 245px
+    }
+    .p_4 {
+        width: 44%;
+        left: 52%;
+        top: 277px;
+        height: 75px
     }
 
 
@@ -356,18 +422,18 @@ footer {
             margin-right: 3%;
             margin-top: 35px;
         }
-        .mute{
+        .mute {
             width: 250px;
             height: 250px;
             background-color: red;
             position: absolute;
-            
+
         }
         .a1 {
             opacity: 1;
             width: 100%;
         }
-        .vid1{
+        .vid1 {
             width: 100%;
             top: 0px;
             position: absolute;
@@ -399,7 +465,7 @@ footer {
             opacity: 0;
             width: 100%;
         }
-        .vid4{
+        .vid4 {
             width: 100%;
             position: absolute;
             top: 0px;
@@ -408,7 +474,7 @@ footer {
             opacity: 0;
             width: 100%;
         }
-        .vid5{
+        .vid5 {
             width: 100%;
             position: absolute;
             top: 0px;
@@ -417,10 +483,13 @@ footer {
             opacity: 0;
             width: 100%;
         }
-        .vid6{
+        .vid6 {
             width: 100%;
             position: absolute;
             top: 0px;
+        }
+        .article2{
+            background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
         }
     }
 
@@ -429,7 +498,7 @@ footer {
     @media all and (min-width:1580px) {
         body {
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: "header header header" "main main main" "article1 article1 article1" "article2 article3 article3" "article4 article4 article5" "article6 article6 article6" "footer footer footer"
+            grid-template-areas: "header header header" "main main main" "article1 article1 article1" "article2 article2 article3" "article4 article4 article5" "article6 article6 article6" "footer footer footer"
         }
         .titulo1 {
             left: 1060px;
@@ -545,6 +614,6 @@ footer {
             font-size: 1.4em;
             width: 41%;
         }
-        section{
+        section {
             margin-top: 0px;
         }

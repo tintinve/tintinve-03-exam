@@ -46,11 +46,16 @@ function teclado(e) {
     if (i >= 1 && i <= 5) {
         div_activo[(i)].style.opacity = +1;
         div_activo[(i)-1].style.opacity = 0;
+         video_activo[(i)].play();
+        video_activo[(i)-1].pause();
+        simbolo_play.style.opacity = "0";
     } else {
         // Este else hace que cuando llegue a cero y le quita el opacity el div_activo[4]
         i = 0;
         div_activo[0].style.opacity = +1;
         div_activo[5].style.opacity = 0;
+        simbolo_play.style.opacity = "0";
+        video_activo[(i)].play();
     }
     console.log(i)
     }
