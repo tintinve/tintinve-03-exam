@@ -247,16 +247,16 @@ footer {
             background-repeat: no-repeat;
         }
         .next {
-            left: 440px;
+            left: 0px;
             top: 30px;
-            width: 200px;
+            width: 690px;
             height: 530px;
             position: absolute;
             cursor: pointer;
             background-color: transparent;
 
         }
-        .prev {
+        /*.prev {
             left: 70px;
             top: 30px;
             width: 100px;
@@ -265,8 +265,7 @@ footer {
             position: absolute;
             cursor: pointer;
             background-color: transparent;
-
-        }
+        }*/
         section {
             position: relative;
             background-color: transparent;

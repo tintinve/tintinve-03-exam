@@ -22,14 +22,15 @@ video_activo[4] = document.querySelector(".vid5");
 video_activo[5] = document.querySelector(".vid6");
 let mute = document.querySelector(".mute");
 let mute_selector = document.querySelector(".mute_switch");
-                                
+let r = 0;                                
 
 
 window.addEventListener("keydown", teclado);
 boton_next.addEventListener('click', funcion_next);
 //boton_prev.addEventListener('click', funcion_prev);
 simbolo_play.addEventListener('click', funcion_play_video);
-mute.addEventListener('click', unmute)
+mute.addEventListener('click', unmute);
+window.addEventListener('resize', boton_play_on_resize);
 
 function teclado(e) {
     //future self: las proximas 3 lines prenden la funcion de keylisten para la flecha hacia la izquierda.
@@ -65,6 +66,7 @@ function funcion_next() {
         div_activo[(i)-1].style.opacity = 0;
         video_activo[(i)].play();
         video_activo[(i)-1].pause();
+        simbolo_play.style.opacity = "0";
         
     } else {
         i = 0;
@@ -88,7 +90,7 @@ function funcion_next() {
 //    }
 //}
 function funcion_play_video() {
-    vid1.play();
+    video_activo[(i)].play();
     simbolo_play.style.opacity = "0";
 }
 
@@ -98,3 +100,10 @@ function unmute (){
 }else{  video_activo[(i)].muted === true
        video_activo[(i)].muted = false;
 }}
+
+function boton_play_on_resize(){
+    b = r + 1;
+    if(b > r);
+    video_activo[(i)].pause();
+    simbolo_play.style.opacity = "1";
+}
