@@ -13,6 +13,13 @@ div_activo[5] = document.querySelector(".a6");
 let i = 0;
 let simbolo_play = document.querySelector(".play_symbol");
 let vid1 = document.querySelector(".vid1");
+let video_activo = [];
+video_activo[0] = document.querySelector(".vid1");
+video_activo[1] = document.querySelector(".vid2");
+video_activo[2] = document.querySelector(".vid3");
+video_activo[3] = document.querySelector(".vid4");
+video_activo[4] = document.querySelector(".vid5");
+video_activo[5] = document.querySelector(".vid6");
                                 
 
 
@@ -53,10 +60,14 @@ function funcion_next() {
     if (i >= 1 && i <= 5) {
         div_activo[(i)].style.opacity = +1;
         div_activo[(i)-1].style.opacity = 0;
+        video_activo[(i)].play();
+        
     } else {
         i = 0;
         div_activo[0].style.opacity = +1;
         div_activo[5].style.opacity = 0;
+        simbolo_play.style.opacity = "0";
+        video_activo[0].play();
     }
     console.log(i);
 }

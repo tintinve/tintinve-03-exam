@@ -95,7 +95,7 @@ main {
 
 .article1 {
     grid-area: article1;
- display: none;
+    display: none;
     background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
 
 }
@@ -163,156 +163,180 @@ footer {
         font-size: 1.4em;
         width: 54%;
     }
-    
+
 
     /*////////////////////////////////////////////////*/
     @media all and (min-width:1390px) {
-            
-    .article1 {
-        display: block;
-        height: 600px;
-        position: relative;
-    }
-    .container {
-        position: absolute;
-        top: 0px;
-        left: 280px;
-        width: 250px;
-        height: 290px;
-        perspective: 1000px;
-    }
-    .hexagono {
-        top: 60px;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        transform-style: preserve-3d;
-        transition: transform 1s;
-        left: -80px;
-    }
-    .item {
-        display: block;
-        position: absolute;
-        background: #000;
-        width: 200px;
-        height: 370px;
-        line-height: 200px;
-        font-size: 5em;
-        text-align: center;
-        color: #FFF;
-        opacity: 0.95;
-        border-radius: 10px;
 
-    }
-    .a {
-        transform: rotateY(0deg) translateZ(250px);
-        background-image: url(assets/img/prototype.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .b {
-        transform: rotateY(60deg) translateZ(250px);
-        background-image: url(assets/img/thrive1.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .c {
-        transform: rotateY(120deg) translateZ(250px);
-        background-image: url(assets/img/tintinve1.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .d {
-        transform: rotateY(180deg) translateZ(250px);
-        background-image: url(assets/img/yojimbo1.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .e {
-        transform: rotateY(240deg) translateZ(250px);
-        background-image: url(assets/img/tintinve_home1.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .f {
-        transform: rotateY(300deg) translateZ(250px);
-        background-image: url(assets/img/redisign.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .next {
-        left: 540px;
-        top: 30px;
-        width: 100px;
-        height: 530px;
-        position: absolute;
-        cursor: pointer;
-        background-color: transparent;
-
-    }
-    .prev {
-        left: 70px;
-        top: 30px;
-        width: 100px;
-        height: 530px;
-        color: #444;
-        position: absolute;
-        cursor: pointer;
-        background-color: transparent;
-
-    }
-    section{
-        position: relative;
-        background-color: transparent;
-        width: 50%;
-        height: 510px;
-        float: right;
-        margin-right: 3%;
-
-        
-    }
-    .texto_item {
-        position: absolute;
-        top: 0;
-        width: 30%;
-        background-color: transparent;
-        color: white;
-       
-    }
-    .a1 {
-        opacity: 1;
-        background-color: #464646;
-        height: 510px;
-        width: 100%;
-    }
-    .play_symbol{
-        position: absolute;
-        width: 150px;
-        top: 165px;
-        left: 340px
+        .article1 {
+            display: block;
+            height: 600px;
+            position: relative;
         }
-    .a2 {
-        opacity: 0;
-        
-    }
-    .a3 {
-        opacity: 0;
-    }
-    .a4 {
-        opacity: 0;
-    }
-    .a5 {
-        opacity: 0;
-    }
-    .a6 {
-        opacity: 0;
-    }
+        .container {
+            position: absolute;
+            top: 0px;
+            left: 280px;
+            width: 250px;
+            height: 290px;
+            perspective: 1000px;
+        }
+        .hexagono {
+            top: 60px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+            left: -80px;
+        }
+        .item {
+            display: block;
+            position: absolute;
+            background: #000;
+            width: 200px;
+            height: 370px;
+            line-height: 200px;
+            font-size: 5em;
+            text-align: center;
+            color: #FFF;
+            opacity: 0.95;
+            border-radius: 10px;
+
+        }
+        .a {
+            transform: rotateY(0deg) translateZ(250px);
+            background-image: url(assets/img/prototype.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .b {
+            transform: rotateY(60deg) translateZ(250px);
+            background-image: url(assets/img/thrive1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .c {
+            transform: rotateY(120deg) translateZ(250px);
+            background-image: url(assets/img/tintinve1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .d {
+            transform: rotateY(180deg) translateZ(250px);
+            background-image: url(assets/img/yojimbo1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .e {
+            transform: rotateY(240deg) translateZ(250px);
+            background-image: url(assets/img/tintinve_home1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .f {
+            transform: rotateY(300deg) translateZ(250px);
+            background-image: url(assets/img/redisign.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .next {
+            left: 440px;
+            top: 30px;
+            width: 200px;
+            height: 530px;
+            position: absolute;
+            cursor: pointer;
+            background-color: transparent;
+
+        }
+        .prev {
+            left: 70px;
+            top: 30px;
+            width: 100px;
+            height: 530px;
+            color: #444;
+            position: absolute;
+            cursor: pointer;
+            background-color: transparent;
+
+        }
+        section {
+            position: relative;
+            background-color: transparent;
+            width: 50%;
+            height: 510px;
+            float: right;
+            margin-right: 3%;
+            margin-top: 35px;
+
+
+        }
+        .texto_item {
+            position: absolute;
+            top: 0;
+            width: 30%;
+            background-color: transparent;
+            color: white;
+
+        }
+        .a1 {
+            opacity: 1;
+            width: 100%;
+        }
+        .vid1{
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+        }
+        .play_symbol {
+            position: absolute;
+            width: 150px;
+            top: 165px;
+            left: 340px;
+            z-index: 5;
+        }
+        .a2 {
+            opacity: 0;
+        }
+        .vid2 {
+            width: 100%;
+        }
+        .a3 {
+            opacity: 0;
+        }
+        .vid3 {
+            width: 100%;
+            top: 0px;
+            position: absolute;
+        }
+        .a4 {
+            opacity: 0;
+            width: 100%;
+        }
+        .vid4{
+            width: 100%;
+        }
+        .a5 {
+            opacity: 0;
+            width: 100%;
+        }
+        .vid5{
+            width: 100%;
+        }
+        .a6 {
+            opacity: 0;
+            width: 100%;
+        }
+        .vid6{
+            width: 100%;
+        }
     }
 
 
@@ -334,14 +358,14 @@ footer {
             position: relative
         }
         .container {
-        position: absolute;
-        top: -40px;
-        left: 320px;
-        width: 250px;
-        height: 290px;
-        perspective: 1000px;
-    }
-    
+            position: absolute;
+            top: -40px;
+            left: 320px;
+            width: 250px;
+            height: 290px;
+            perspective: 1000px;
+        }
+
         .hexagono {
             top: 60px;
             height: 100%;
@@ -406,9 +430,9 @@ footer {
             background-repeat: no-repeat;
         }
         .next {
-            left: 600px;
-            top: 30px;
-            width: 100px;
+            left: 5$0px;
+            top: 0px;
+            width: 240px;
             height: 530px;
             position: absolute;
             cursor: pointer;
@@ -435,4 +459,7 @@ footer {
             top: 57%;
             font-size: 1.4em;
             width: 41%;
+        }
+        section{
+            margin-top: 0px;
         }
