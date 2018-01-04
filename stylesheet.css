@@ -112,6 +112,7 @@ main {
     background-color: #EBFF3B;
     float: right;
     padding: 5px;
+    padding-left: 19px;
 }
 
 .h2_1_art2 {
@@ -226,6 +227,7 @@ main {
     float: right;
     background-color: #A022FF;
     padding: 5px;
+    padding-right: 19px;
 }
 .p_1_art3{
     float: left;
@@ -256,8 +258,18 @@ main {
 
 .article5 {
     grid-area: article5;
+    background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
+    height: 450px;
+    position: relative;
+}
+.p_1_art5{
+    float: left;
     background-color: lightgrey;
-    height: 250px;
+    padding: 5px;
+    padding-left: 17px;
+    position: absolute;
+    top: 78px;
+    width: 85%;
 
 }
 
@@ -641,15 +653,15 @@ footer {
             background-repeat: no-repeat;
         }
         .next {
-            left: 5$0px;
+            left: 50px;
             top: 0px;
-            width: 240px;
+            width: 640px;
             height: 530px;
             position: absolute;
             cursor: pointer;
-            background-color: transparent;
+            background-color: red;
         }
-        .prev {
+        /*.prev {
             left: 7em;
             top: 30px;
             width: 100px;
@@ -658,7 +670,7 @@ footer {
             position: absolute;
             cursor: pointer;
             background-color: transparent;
-        }
+        }*/
         .titulo1 {
             left: 56%;
             top: 35%;
