@@ -104,7 +104,7 @@ main {
 .article2 {
     grid-area: article2;
     background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
-    height: 590px;
+    height: 490px;
     position: relative;
 }
 
@@ -127,7 +127,7 @@ main {
     padding: 5px;
     padding-left: 17px;
     position: absolute;
-    top: 128px;
+    top: 100px;
     width: 85%;
     opacity: 0.9;
 
@@ -139,7 +139,7 @@ main {
     padding: 10px;
     padding-left: 17px;
     position: absolute;
-    top: 159px;
+    top: 132px;
     width: 85%;
     opacity: 0.9;
 }
@@ -147,7 +147,7 @@ main {
 .h3_2 {
     position: absolute;
     left: 0px;
-    top: 245px;
+    top: 206px;
     padding: 5px;
     padding-left: 17px;
     width: 85%;
@@ -158,7 +158,7 @@ main {
 .p_2 {
     position: absolute;
     left: 0px;
-    top: 276px;
+    top: 238px;
     padding: 10px;
     padding-left: 17px;
     width: 85%;
@@ -169,7 +169,7 @@ main {
 .h3_3 {
     position: absolute;
     left: 0px;
-    top: 363px;
+    top: 312px;
     padding: 5px;
     padding-left: 17px;
     width: 85%;
@@ -180,7 +180,7 @@ main {
 .p_3 {
     position: absolute;
     left: 0px;
-    top: 393px;
+    top: 344px;
     padding: 10px;
     padding-left: 17px;
     width: 85%;
@@ -191,7 +191,7 @@ main {
 .h3_4 {
     position: absolute;
     left: 0px;
-    top: 462px;
+    top: 400px;
     padding: 5px;
     padding-left: 17px;
     width: 85%;
@@ -202,7 +202,7 @@ main {
 .p_4 {
     position: absolute;
     left: 0px;
-    top: 494px;
+    top: 432px;
     padding: 10px;
     padding-left: 17px;
     width: 85%;
@@ -213,7 +213,7 @@ main {
 .article3 {
     grid-area: article3;
     background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
-    height: 370px;
+    height: 325px;
     position: relative;
 }
 .h1_1_art3 {
@@ -235,14 +235,14 @@ main {
     padding: 5px;
     padding-left: 17px;
     position: absolute;
-    top: 78px;
+    top: 58px;
     width: 85%;
     opacity: 0.9;
 }
 .article4 {
     grid-area: article4;
     background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
-    height: 520px;
+    height: 470px;
     position: relative;
 }
 .p_1_art4{
@@ -251,7 +251,7 @@ main {
     padding: 5px;
     padding-left: 17px;
     position: absolute;
-    top: 78px;
+    top: 57px;
     width: 85%;
     opacity: 0.9;
 }
@@ -259,29 +259,52 @@ main {
 .article5 {
     grid-area: article5;
     background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
-    height: 450px;
+    height: 698px;
     position: relative;
+}
+.p_1_art5 a:link {
+    text-decoration: none;
+}
+
+.p_1_art5 a:visited {
+    text-decoration: none;
+    color: blue;
 }
 .p_1_art5{
     float: left;
-    background-color: lightgrey;
+    background-color: white;
     padding: 5px;
     padding-left: 17px;
     position: absolute;
-    top: 78px;
+    top: 57px;
     width: 85%;
+    text-decoration: none;
+    opacity: 0.9;
 
 }
 
 .article6 {
     grid-area: article6;
-    background-color: lightgrey;
-    height: 250px;
-
+    background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
+    height: 174px;
+    position: relative;
 }
-
+.p_1_art6{float: left;
+    background-color: white;
+    padding: 5px;
+    padding-left: 17px;
+    position: absolute;
+    top: 55px;
+    width: 85%;
+    text-decoration: none;
+    opacity: 0.9;}
 footer {
     grid-area: footer;
+    text-align: center;
+    height: 0px;
+}
+footer p{
+    padding: 6px;
 }
 
 
@@ -290,7 +313,15 @@ footer {
 @media all and (min-width:680px) {
     body {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "header header" "main main" "article1 article1" "article2 article2" "article3 article3" "article4 article4" "article5 article5" "article6 article6" "footer footer"
+        grid-template-areas: 
+            "header header" 
+            "main main" 
+            "article1 article1" 
+            "article2 article2" 
+            "article3 article4" 
+            "article5 article5" 
+            "article6 article6" 
+            "footer footer"
     }
     .titulo1 {
         left: 44%;
