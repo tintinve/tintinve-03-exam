@@ -259,7 +259,7 @@ main {
 .article5 {
     grid-area: article5;
     background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
-    height: 698px;
+    height: 716px;
     position: relative;
 }
 .p_1_art5 a:link {
@@ -286,7 +286,7 @@ main {
 .article6 {
     grid-area: article6;
     background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
-    height: 174px;
+    height: 144px;
     position: relative;
 }
 .p_1_art6{float: left;
@@ -317,8 +317,9 @@ footer p{
             "header header" 
             "main main" 
             "article1 article1" 
-            "article2 article2" 
-            "article3 article4" 
+            "article2 article2"
+            "article4 article4git"
+            "article3 article3" 
             "article5 article5" 
             "article6 article6" 
             "footer footer"
@@ -351,50 +352,54 @@ footer p{
         left: 69%;
     }
     .h3_1_art2 {
-        top: 70px;
-        width: 45%;
+        top: 98px;
+        width: 90%;
         left: 37px;
         float: left
     }
     .p1_1_art2 {
-        top: 100px;
-        width: 45%;
+        top: 130px;
+        width: 90%;
         opacity: 0.9;
         left: 37px;
     }
 
     .h3_2 {
-        top: 190px;
-        width: 45%;
+        top: 204px;
+        width: 90%;
         left: 37px;
         
     }
     .p_2 {
-        top: 220px;
-        width: 45%;
+        top: 236px;
+        width: 90%;
         left: 37px;
     }
     .h3_3 {
         width: 44%;
-        top: 70px;
+        top: 98px;
         left: 51%;
+        background-color: transparent;
     }
     .p_3 {
         width: 44%;
-        top: 100px;
+        top: 130px;
         left: 51%;
-        height: 75px
+        height: 75px;
+        background-color: transparent;
     }
     .h3_4 {
         width: 44%;
         left: 51%;
-        top: 189px
+        top: 205px;
+        background-color: transparent;
     }
     .p_4 {
         width: 44%;
         left: 51%;
-        top: 221px;
-        height: 75px
+        top: 237px;
+        height: 73px;
+        background-color: transparent;
     }
     .h1_1_art3{
         float: left;
