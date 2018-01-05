@@ -120,96 +120,16 @@ main {
     background-color: #A022FF;
     padding: 5px;
 }
-
-.h3_1_art2 {
-    float: left;
+.div1{
+     float: left;
     background-color: white;
-    padding: 5px;
+    padding: 7px;
     padding-left: 17px;
     position: absolute;
-    top: 100px;
-    width: 85%;
-    opacity: 0.9;
-
-}
-
-.p1_1_art2 {
-    float: left;
-    background-color: white;
-    padding: 10px;
-    padding-left: 17px;
-    position: absolute;
-    top: 132px;
+    top: 130px;
     width: 85%;
     opacity: 0.9;
 }
-
-.h3_2 {
-    position: absolute;
-    left: 0px;
-    top: 206px;
-    padding: 5px;
-    padding-left: 17px;
-    width: 85%;
-    opacity: 0.9;
-    background-color: white;
-}
-
-.p_2 {
-    position: absolute;
-    left: 0px;
-    top: 238px;
-    padding: 10px;
-    padding-left: 17px;
-    width: 85%;
-    opacity: 0.9;
-    background-color: white;
-}
-
-.h3_3 {
-    position: absolute;
-    left: 0px;
-    top: 312px;
-    padding: 5px;
-    padding-left: 17px;
-    width: 85%;
-    opacity: 0.9;
-    background-color: white;
-}
-
-.p_3 {
-    position: absolute;
-    left: 0px;
-    top: 344px;
-    padding: 10px;
-    padding-left: 17px;
-    width: 85%;
-    opacity: 0.9;
-    background-color: white;
-}
-
-.h3_4 {
-    position: absolute;
-    left: 0px;
-    top: 400px;
-    padding: 5px;
-    padding-left: 17px;
-    width: 85%;
-    opacity: 0.9;
-    background-color: white;
-}
-
-.p_4 {
-    position: absolute;
-    left: 0px;
-    top: 432px;
-    padding: 10px;
-    padding-left: 17px;
-    width: 85%;
-    opacity: 0.9;
-    background-color: white;
-}
-
 .article3 {
     grid-area: article3;
     background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
@@ -286,10 +206,11 @@ main {
 .article6 {
     grid-area: article6;
     background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
-    height: 144px;
+    height: 100px;
     position: relative;
 }
-.p_1_art6{float: left;
+.p_1_art6{
+    float: left;
     background-color: white;
     padding: 5px;
     padding-left: 17px;
@@ -297,14 +218,41 @@ main {
     top: 55px;
     width: 85%;
     text-decoration: none;
-    opacity: 0.9;}
+    opacity: 0.9;
+}
+.p_1_art6 a:link {
+    text-decoration: none;
+}
+
+.p_1_art6 a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
 footer {
     grid-area: footer;
     text-align: center;
-    height: 0px;
+    height: 115px;
+    background:  linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
+    position: relative;
 }
-footer p{
-    padding: 6px;
+.contact_me{
+    background-color: #EBFF3B;
+    float: left;
+    padding: 5px;
+    padding-left: 19px;
+    position: absolute;
+    font-size: 1.3em;
+    top: 20px;
+    
+}
+.contact_me a:link {
+    text-decoration: none;
+}
+
+.contact_me a:visited {
+    text-decoration: none;
+    color: blue;
 }
 
 
@@ -317,9 +265,9 @@ footer p{
             "header header" 
             "main main" 
             "article1 article1" 
-            "article2 article2"
-            "article4 article4git"
+            "article2 article2" 
             "article3 article3" 
+            "article4 article4"
             "article5 article5" 
             "article6 article6" 
             "footer footer"
@@ -337,83 +285,35 @@ footer p{
         width: 54%;
     }
     .article2{
-        height: 330px;
+        height: 420px;
     }
-    .h1_1_art2 {
-        background-color: #EBFF3B;
+    .h1_1_art2{
         float: left;
-        padding: 5px;
     }
-    .h2_1_art2 {
+    .h2_1_art2{
         float: left;
-        background-color: #A022FF;
-        padding: 5px;
-        top: 38px;
-        left: 69%;
     }
-    .h3_1_art2 {
-        top: 98px;
-        width: 90%;
-        left: 37px;
-        float: left
-    }
-    .p1_1_art2 {
-        top: 130px;
-        width: 90%;
-        opacity: 0.9;
-        left: 37px;
-    }
-
-    .h3_2 {
-        top: 204px;
-        width: 90%;
-        left: 37px;
-        
-    }
-    .p_2 {
-        top: 236px;
-        width: 90%;
-        left: 37px;
-    }
-    .h3_3 {
-        width: 44%;
-        top: 98px;
-        left: 51%;
-        background-color: transparent;
-    }
-    .p_3 {
-        width: 44%;
-        top: 130px;
-        left: 51%;
-        height: 75px;
-        background-color: transparent;
-    }
-    .h3_4 {
-        width: 44%;
-        left: 51%;
-        top: 205px;
-        background-color: transparent;
-    }
-    .p_4 {
-        width: 44%;
-        left: 51%;
-        top: 237px;
-        height: 73px;
-        background-color: transparent;
-    }
-    .h1_1_art3{
-        float: left;
+    .div1{
+        top: 88px;
+        width: 75%;
+        float: right;
     }
     .h2_1_art3{
         float: left;
     }
     .p_1_art3{
-        width: 44%;
-        top: 128px;
-        left: 51%;
-        float: left;
+        width: 75%;
     }
-
+    .p_1_art4{
+        width: 75%;
+    }
+    .p_1_art5{
+        width: 75%;
+    }
+    .p_1_art6{
+        width: 75%;
+    }
+    
 
     /*////////////////////////////////////////////////*/
     @media all and (min-width:1390px) {
