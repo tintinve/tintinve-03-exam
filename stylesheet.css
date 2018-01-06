@@ -536,11 +536,11 @@ footer {
         }
         .p_1_art6{width: 70%;
         }
-        .footer{
+        footer{
             background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
-        }
+    
     }
-
+}
 
     /*////////////////////////////////////////////////*/
     @media all and (min-width:1580px) {
