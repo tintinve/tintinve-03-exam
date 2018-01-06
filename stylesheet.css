@@ -501,13 +501,17 @@ footer {
     
         }
         .h2_1_art2{
-            background-color: gainsboro;
+            background-color: #323232;
             padding-left: 19px;
             width: 20%;
             position: absolute;
             top:38px;
             width: 474px;
-    
+            color: white;
+        }
+        .h2_1_art3{
+            background-color: #323232;
+            color: white;
         }
         .div1{
             position: absolute;
