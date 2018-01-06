@@ -104,7 +104,7 @@ main {
 .article2 {
     grid-area: article2;
     background: linear-gradient(to right top, #33ccff 23%, #3333ff 106%);
-    height: 490px;
+    height: 470px;
     position: relative;
 }
 
@@ -494,7 +494,50 @@ footer {
             top: 0px;
         }
         .article2{
-            background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
+             background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
+        }
+        .h1_1_art2{
+            background-color: white;
+    
+        }
+        .h2_1_art2{
+            background-color: gainsboro;
+            padding-left: 19px;
+            width: 20%;
+            position: absolute;
+            top:38px;
+            width: 474px;
+    
+        }
+        .div1{
+            position: absolute;
+            top: 76px;
+            width: 70%;
+        }
+        .article3{
+           background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
+        }
+        .p_1_art3{
+            width: 70%;
+        }
+        .article4{
+           background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
+        }
+        .p_1_art4{
+            width: 70%;
+        }
+        .article5{
+           background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
+        }
+        .p_1_art5{width: 70%;
+        }
+        .article6{
+           background: linear-gradient(to bottom right, #33ccff 23%, #3333ff 106%);
+        }
+        .p_1_art6{width: 70%;
+        }
+        .footer{
+            background: linear-gradient(to top right, #33ccff 23%, #3333ff 106%);
         }
     }
 
@@ -503,7 +546,16 @@ footer {
     @media all and (min-width:1580px) {
         body {
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: "header header header" "main main main" "article1 article1 article1" "article2 article2 article3" "article4 article4 article5" "article6 article6 article6" "footer footer footer"
+            grid-template-areas: 
+                "header header header" 
+                "main main main" 
+                "article1 article1 article1" 
+                "article2 article2 article2" 
+                "article3 article3 article3"
+                "article4 article4 article4"
+                "article5 article5 article5" 
+                "article6 article6 article6" 
+                "footer footer footer"
         }
         .titulo1 {
             left: 1060px;
@@ -622,3 +674,4 @@ footer {
         section {
             margin-top: 0px;
         }
+        
