@@ -29,7 +29,7 @@ window.addEventListener("keydown", teclado);
 boton_next.addEventListener('click', funcion_next);
 //boton_prev.addEventListener('click', funcion_prev);
 simbolo_play.addEventListener('click', funcion_play_video);
-mute.addEventListener('click', unmute);
+//mute.addEventListener('click', unmute);
 window.addEventListener('resize', boton_play_on_resize);
 
 function teclado(e) {
@@ -108,6 +108,7 @@ function funcion_play_video() {
 
 function boton_play_on_resize(){
     b = r + 1;
+    console.log(b)
     if(b > r);
     video_activo[(i)].pause();
     simbolo_play.style.opacity = "1";
