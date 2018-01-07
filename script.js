@@ -99,12 +99,12 @@ function funcion_play_video() {
     simbolo_play.style.opacity = "0";
 }
 
-function unmute (){
-   if ( video_activo[(i)].muted === false) {    
-        video_activo[(i)].muted = true;
-}else{  video_activo[(i)].muted === true
-       video_activo[(i)].muted = false;
-}}
+//function unmute (){
+  // if ( video_activo[(i)].muted === false) {    
+    //    video_activo[(i)].muted = true;
+//}else{  video_activo[(i)].muted === true
+  //     video_activo[(i)].muted = false;
+//}}
 
 function boton_play_on_resize(){
     b = r + 1;
