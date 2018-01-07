@@ -36,10 +36,10 @@ main {
     color: white;
     background-color: black;
     width: 250px;
-    padding-left: 10px
+    padding: 20px;
 }
 
-.prompt {
+/*.prompt {
     font-size: 3.3em;
     color: white;
     background-color: black;
@@ -72,7 +72,7 @@ main {
         color: black
     }
     ;
-}
+}*/
 
 .titulo1 {
     position: absolute;
